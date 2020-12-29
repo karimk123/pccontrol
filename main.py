@@ -35,6 +35,9 @@ def get_mac_adress():
 
 	
 	
+def flood_attack():
+	os.system("ping -t -l 65500 127.0.0.1")
+	
 	
 def shutdown(mode="s"):
     try:
