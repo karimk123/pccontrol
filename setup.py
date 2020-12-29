@@ -12,7 +12,7 @@ setup(
   keywords = ['pccontrol', 'control pc', 'pc control'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
 
-          '
+          
           'requests',
           'pyautogui'
       ],
