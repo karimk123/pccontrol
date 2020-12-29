@@ -8,7 +8,7 @@ setup(
   author = 'kar1ms',                   # Type in your name
   author_email = 'tomkaka125@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/karimk123/pccontrol',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/karimk123/pccontrol/archive/v_0.1.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/karimk123/pccontrol/archive/v_0.2.tar.gz',    # I explain this later on
   keywords = ['pccontrol', 'control pc', 'pc control'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
 
