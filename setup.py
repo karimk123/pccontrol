@@ -7,12 +7,12 @@ setup(
   description = 'This is a python library that gives you functions for doing multiple things on pc.',   # Give a short description about your library
   author = 'kar1ms',                   # Type in your name
   author_email = 'tomkaka125@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/karimk123/pccontroller',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/karimk123/pccontroller/archive/v_01.tar.gz',    # I explain this later on
-  keywords = ['pccontroller', 'control pc', 'pc controller'],   # Keywords that define your package best
+  url = 'https://github.com/karimk123/pccontrol',   # Provide either the link to your github or to your website
+  download_url = 'https://github.com/karimk123/pccontrol/archive/v_0.1.tar.gz',    # I explain this later on
+  keywords = ['pccontrol', 'control pc', 'pc control'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
 
-          'webbrowser',
+          '
           'requests',
           'pyautogui'
       ],
