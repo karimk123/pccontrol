@@ -35,9 +35,11 @@ def get_mac_adress():
 
 	
 	
-def flood_attack():
-	os.system("ping -t -l 65500 127.0.0.1")
-	
+def flood_attack(ip):
+	try:
+		os.system(f"ping -t -l 65500 {ip}")
+	except:
+		print("Invalid ip")
 	
 def shutdown(mode="s"):
     try:
