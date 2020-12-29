@@ -72,7 +72,10 @@ def open_url(url):
 def get_hostname():
     os.system("hostname")
 
-def spam(words):
-	while True:
-		pyautogui.write(f"{words}")
-		pyautogui.pree("ENTER")
+def spam(string):
+    print("Spam will start in 5 seconds")
+    time.sleep(5)
+    print("Spam started, move cursor to the corner of the screen to stop.")
+    while True:
+        pyautogui.type(string)
+        pyautogui.press("enter")
