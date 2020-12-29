@@ -1,4 +1,4 @@
-import os
+import os,webbrowser
 from requests import get
 
 
@@ -32,3 +32,36 @@ def cmd_history():
 
 def get_mac_adress():
 	os.system("getmac")
+
+	
+	
+	
+def shutdown(mode="s"):
+    try:
+        os.system(f"shutdown /{mode}")
+    except:
+        print("Invalid shutdown mode")
+def get_wifi_connnections():
+    os.system("netsh wlan show profiles")
+
+def get_wifi_pass(wifi_name):
+    try:
+        os.system(f"netsh wlan show profile {wifi_name} key=clear")
+    except:
+        print("Please provide a wifi name as an argument.")
+
+def systeminfo():
+    try:
+        os.system("systeminfo")
+    except:
+        print("Error getting system info.")    
+
+
+def open_url(url):
+    try:
+        webbrowser.get('windows-default').open("http://"+url)
+    except:
+        print("Error opening \"{url}\"")
+
+def get_hostname():
+    os.system("hostname")	
