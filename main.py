@@ -17,3 +17,18 @@ def change_pass(user, new_pass):
 		os.system(f"{new_pass}")
 	except:
 		print("please provide the user and new pass")
+
+def task_manager():
+	os.system("tasklist")
+
+def arp():
+	os.system("arp -a")
+
+def get_active_connections():
+	os.system("netstat")
+
+def cmd_history():
+	os.system("doskey/history")
+
+def get_mac_adress():
+	os.system("getmac")
