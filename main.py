@@ -73,8 +73,10 @@ def get_hostname():
     os.system("hostname")
 
 def spam(string):
-    print("Spam will start in 10 seconds")
-    time.sleep(10)
+    print("Spam will start in 5 seconds")
+    time.sleep(5)
+    print("Spam started, move cursor to the corner of the screen to stop.")
     while True:
         pyautogui.type(string)
         pyautogui.press("enter")
+#by kar1m hany
