@@ -1,5 +1,6 @@
 import os,webbrowser
 from requests import get
+import pyautogui
 
 
 def get_ip():
@@ -69,4 +70,9 @@ def open_url(url):
         print("Error opening \"{url}\"")
 
 def get_hostname():
-    os.system("hostname")	
+    os.system("hostname")
+
+def spam(words):
+	while True:
+		pyautogui.write(f"{words}")
+		pyautogui.pree("ENTER")
