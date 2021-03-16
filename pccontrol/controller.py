@@ -2,10 +2,11 @@ import os
 import webbrowser
 from requests import get
 import pyautogui
-
+from json import loads
 
 def get_ip():
-    ip = get('https://api.ipify.org').text
+    ip = get("https://api64.ipify.org?format=json").text
+    ip = loads(ip)["ip"]
     if ip == None or '':
         print("ERORR getting IP.")
     else:
@@ -58,7 +59,7 @@ def shutdown(mode="s"):
         print("Invalid shutdown mode")
 
 
-def get_wifi_connnections():
+def get_wifi_connections():
     os.system("netsh wlan show profiles")
 
 
