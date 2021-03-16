@@ -1,1 +1,1 @@
-from main import get_ip
+from .controller import *
