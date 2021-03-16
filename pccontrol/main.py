@@ -47,7 +47,7 @@ def shutdown(mode="s"):
         os.system(f"shutdown /{mode}")
     except:
         print("Invalid shutdown mode")
-def get_wifi_connnections():
+def get_wifi_connections():
     os.system("netsh wlan show profiles")
 
 def get_wifi_pass(wifi_name):
